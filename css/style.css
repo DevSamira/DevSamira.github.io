@@ -1,0 +1,394 @@
+:root{
+    --rosa: #FF66CC;
+    --preto: #1B1A1A;
+    --branco: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho{
+    width: 100%;
+    background-color: var(--rosa);
+    height: 40px;
+    display: flex;
+    align-items: baseline;
+}
+
+main{
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.conteudo-cabecalho{
+    align-items: center;
+    width: 1000px;
+    display: flex;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.conteudo-cabecalho p{
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.redes-sociais ul{
+    display: flex;
+    align-items: baseline;
+    margin-left: 47rem;
+}
+
+.redes-sociais ul li{
+    list-style: none;
+    margin-left: 8px;
+    padding-top: 5px;
+}
+
+.redes-sociais ul li img{
+    width: 30px;
+    height: 30px;
+}
+
+.titulo{
+    margin-top: 20%;
+    width: 100%;
+}
+
+.titulo h2{
+    color: var(--branco);
+}
+
+.titulo h2 li{
+    color: var(--rosa);
+    animation: surgir 2s ease-in;
+    margin-left: 23px;
+}
+
+.titulo h1{
+    color: var(--branco);
+    padding: 20px 0px;
+    font-size: 6rem;
+}
+
+@keyframes surgir{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.titulo-nome{
+    display: flex;
+    align-items: baseline;
+}
+
+.titulo-nome h2{
+    font-size: 5rem;
+    animation: piscar 0.8s infinite;
+    margin-left: 2px;
+    font-style: italic;
+}
+
+@keyframes piscar {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.sobre-mim{
+    margin-top: 11rem;
+    margin-bottom: 80px;
+}
+
+.sobre-mim h2{
+    color: var(--branco);
+    margin-left: 45%;
+    font-size: 1.6rem;
+}
+
+.boxes{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-around;
+}
+
+.soft-skills{
+    cursor: pointer;
+    background-color: var(--rosa);
+    height: 455px;
+    width: 347px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.541);
+}
+
+.soft-skills:hover{
+    transform: translateY(-25px);
+    height: 500px;
+    width: 380px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.541);
+}
+
+.soft-skills p{
+    border-bottom: 1px solid var(--preto);
+    font-size: 30px;
+    color: var(--preto);
+    padding: 15px;
+    text-align: center;
+}
+
+.soft-skills ul{
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.soft-skills li{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 4px;
+}
+
+.hard-skills{
+    cursor: pointer;
+    background-color: #606060;
+    height: 455px;
+    width: 347px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.541);
+}
+
+.hard-skills:hover{
+    transform: translateY(-25px);
+    height: 500px;
+    width: 380px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.541);
+}
+
+.hard-skills p{
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    color: var(--branco);
+    padding: 15px;
+    text-align: center;
+}
+
+.hard-skills ul{
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.hard-skills li{
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 4px;
+}
+
+.formacao{
+    margin-top: 9rem;
+    margin-bottom: 80px;
+}
+
+.formacao h2{
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.ads-ifpb{
+    margin-top: 5rem;
+}
+
+.ads-ifpb ul{
+    margin-left: 18px;
+}
+
+.ads-ifpb li{
+    color: var(--branco);
+    font-size: 1.2rem;
+}
+
+.percentual-de-progresso{
+    padding: 20px;
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--branco);
+    margin-bottom: 50px;
+}
+
+.barra-de-progresso{
+    height: 40px;
+    width: 100px;
+    background: linear-gradient(0deg, rgba(193,22,136,1) 0%, rgba(255,102,204,1) 100%);
+    border-radius: 3px;
+}
+
+.percentual-de-progresso p{
+    color: var(--branco);
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+.percentual-de-progresso p b{
+    color: var(--branco);
+    font-size: 1.8rem;
+    margin-left: 8px;
+}
+
+.accordion{
+    margin-top: 50px;
+}
+
+.menu{
+    display: flex;
+    width: 1000px;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+.menu li{
+    margin-left: 1rem;
+    width: 500px;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu-item{
+    list-style: none;
+    border-top: 1px solid var(--rosa);
+    overflow: hidden;
+}
+
+.btn{
+    display: block;
+    padding: 1rem 1.2rem;
+    background-color: #606060;
+    color: var(--branco);
+    position: relative;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: #606060;
+    left: 1.5rem;
+    bottom: -0.5rem;
+    transform: rotate(45deg);
+}
+
+.btn i{
+    margin-right: 1rem;
+}
+
+.menu-item__sub{
+    background-color: var(--preto);
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.menu-item__sub a{
+    display: block;
+    padding: 1rem 1.6rem;
+    color: var(--branco);
+    font-size: 0.9rem;
+    position: relative;
+    border-bottom: 1px solid var(--rosa);
+}
+
+.menu-item:target .menu-item__sub{
+    max-height: 20rem;
+}
+
+.dados-pessoais{
+    margin-top: 80px;
+}
+
+.dados-pessoais ul{
+    line-height: 20px;
+}
+
+.dados-pessoais li{
+    margin-left: 1rem;
+    padding: 1rem;
+    color: var(--branco);
+}
+.alinhamento-itens{
+    display: flex;
+    margin-top: 40px;
+}
+
+.alinhamento-itens .idiomas{
+    display: flex;
+}
+
+.alinhamento-itens ul li:nth-child(4){
+    color: var(--rosa);
+    list-style: none;
+    text-align: left;
+    font-size: 1.4rem;
+    margin-left: -18px;
+}
+.meus-dados h2{
+    font-size: 1.6rem;
+    color: var(--rosa);
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+.meus-dados figure img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.meus-dados ul{
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.meus-dados li{
+    font-size: 1.2rem;
+}
+.idiomas{}
+.idiomas ul{}
+.idiomas li{
+    font-size: 1rem;
+}
+.experiencia{}
+.experiencia h2{
+    text-align: center;
+    color: var(--rosa);
+    margin-top: 40px;
+}
+.experiencia ul{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+}
+.experiencia li{
+    margin-left: 40px;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--rosa);
+    height: 40px;
+}
+
